@@ -1,0 +1,104 @@
+body{
+  background: url('workout.gif');
+  background-size: cover;
+}
+h2,h1{
+  text-align: center;
+}
+ul,li{
+  text-align: center;
+}
+html{
+  color: black;
+  font-family: komet,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+li{
+  list-style: none;
+}
+.datePlusListBox{
+  border: 1px transparent black;
+  width: 50%;
+  margin-left: 24%;
+  background: rgba(105, 82, 0, 0.183);	
+
+}
+#mainBox{
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-radius: 43px; 
+  border: 2px solid #000000;
+
+
+  
+}
+#log{
+  font-size: 15px;
+}
+.strike{
+  color: red;
+  background-color: black;
+}
+body{
+  background-color: white;
+}
+/* .datePlusListBox {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+
+
+
+
+
+  .inputBox {
+    padding: 5px;
+    font-size: 15px;
+    border-width: 1px;
+    background-color: #000000;
+    color: #ffda00;
+    border-style: solid;
+    border-radius: 0px;
+}
+
+header{
+  background-color: black;
+  height: 100px;
+  margin: 0% 30%;
+  background: url('dumbell.png');
+  background-size: cover;
+}
+h1{
+  color: black;
+  padding-top: 8%;
+ 
+}
+
+

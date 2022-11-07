@@ -1,0 +1,91 @@
+<!DOCclass="inputBox" TYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/udt8wec.css">
+</head>
+<body>
+  <header>
+    <h1>Workout Tracker</h1>
+  </header>
+  <section id="mainBox">
+
+
+
+
+  <h3>Workouts:</h3>
+  <ul class="dates">
+    <% let recentDate = '' %>
+    
+  <% for(let i=0; i<dates.length; i++) { %>
+    <section class="datePlusListBox">
+      <!-- style="background-color: <%= dates[i].backgroundColor %>" -->
+      <li    class="dates">
+     <% if(dates[i].date !== recentDate) { %>
+      <h2 <%= dates[i].completed ? 'class =  strike' : 'class = notDone' %> > <%= dates[i].date%>
+        <span id="log"><i class="profile fa fa-check-circle-o" aria-hidden="true" ></i>Finish Log</span> 
+      </h2>
+     
+      <% recentDate = dates[i].date %> 
+     <% } %> 
+        <section>
+       <span ><%= dates[i].name%></span> 
+       <span ><%= dates[i].msg%></span>
+       <span ><%= dates[i].sets%></span>
+       <span ><%= dates[i].Reps%></span>
+       <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+       
+    </section>
+    
+     
+    </li>
+
+   
+
+    
+  </section>
+  <% } %>
+  
+
+
+ 
+
+  </ul>
+
+  <h2>Add one of your Workouts</h2>
+
+
+
+
+
+  
+
+<section id="form">
+  <form action="/dates" method="POST">
+    <section>
+    <input class="inputBox" type="date" placeholder="Date" name="date">
+    </section>
+    <section>
+    <input class="inputBox" type="text" placeholder="Muscle Group" name="name">
+  </section>
+  <section>
+    <input class="inputBox" type="text" placeholder="Workout Name" name="msg">
+  </section>
+  <section>
+    <input class="inputBox" type="text" placeholder="Sets Completed" name="sets">
+  </section>
+  <section>
+    <input class="inputBox" type="text" placeholder="Reps Completed" name="Reps">
+  </section>
+    <button class="inputBox" type="submit">Submit</button>
+  </form>
+  </section>
+</section>
+  <script src="main.js"></script>
+
+</body>
+</html>
